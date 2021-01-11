@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <action
+        android:id="@+id/action_global_goSettings"
+        app:destination="@id/mainSettingsActivity" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="es.uniovi.sdm.quarantinementalhealthtracker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_dayDetailFragment"
+            app:destination="@id/day_graph">
+            <argument
+                android:name="dayId"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="es.uniovi.sdm.quarantinementalhealthtracker.ui.days.survey.SurveyFragment"
+        android:label="Survey"
+        tools:layout="@layout/fragment_survey">
+        <argument
+            android:name="dayId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_surveyFragment_to_day_graph"
+            app:destination="@id/day_graph">
+            <argument
+                android:name="dayId"
+                app:argType="string" />
+            <argument
+                android:name="finishedSurveyResult"
+                app:argType="integer[]" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="es.uniovi.sdm.quarantinementalhealthtracker.ui.stats.StatisticsFragment"
+        android:label="@string/menu_stats"
+        tools:layout="@layout/fragment_statistics" />
+    <activity
+        android:id="@+id/mainSettingsActivity"
+        android:name="es.uniovi.sdm.quarantinementalhealthtracker.MainSettingsActivity"
+        android:label="Settings" />
+    <navigation
+        android:id="@+id/day_graph"
+        app:startDestination="@id/dayDetailFragment">
+        <fragment
+            android:id="@+id/dayDetailFragment"
+            android:name="es.uniovi.sdm.quarantinementalhealthtracker.ui.days.DayDetailFragment"
+            android:label="Day">
+            <argument
+                android:name="dayId"
+                app:argType="string" />
+            <argument
+                android:name="finishedSurveyResult"
+                android:defaultValue="@null"
+                app:argType="integer[]"
+                app:nullable="true" />
+        </fragment>
+        <fragment
+            android:id="@+id/goalsFragment"
+            android:name="es.uniovi.sdm.quarantinementalhealthtracker.ui.days.goals.GoalsFragment"
+            android:label="GoalsFragment"></fragment>
+        <action
+            android:id="@+id/action_global_surveyFragment"
+            app:destination="@id/surveyFragment">
+            <argument
+                android:name="dayId"
+                app:argType="string" />
+        </action>
+    </navigation>
+</navigation>

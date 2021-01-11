@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Quarantine Health Tracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_stats">Stats</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_main_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="survey_take">Do you feel good? We suggest you to take a survey</string>
+
+    <string name="survey_title">Fill the following survey about how you have felt this day</string>
+    <string name="survey_start">Fill</string>
+    <string name="survey_1">Little interest or pleasure in doing things?</string>
+    <string name="survey_2">Feeling down, depressed, or hopeless?</string>
+    <string name="survey_3">Trouble falling or staying asleep, or sleeping too much?</string>
+    <string name="survey_4">Feeling tired or having little energy?</string>
+    <string name="survey_5">Poor appetite or overeating?</string>
+    <string name="survey_6">Feeling bad about yourself — or that you are a failure or have let yourself or your family down?</string>
+    <string name="survey_7">Trouble concentrating on things, such as reading the newspaper or watching television?</string>
+    <string name="survey_8">Moving or speaking so slowly that other people could have noticed? Or so fidgety or restless that you have been moving a lot more than usual?</string>
+    <string name="survey_9">Thoughts that you would be better off dead, or thoughts of hurting yourself in some way?</string>
+    <string name="survey_severity_minimal">It seems that you are doing ok! Keep tracking your mood the next days</string>
+    <string name="survey_severity_moderate">It seems that, you didnt have a good day, why dont you talk to your relatives about this?</string>
+    <string name="survey_severity_severe">I suggest you to talk to a professional remotely. Therapy can help you a lot, use it!</string>
+</resources>

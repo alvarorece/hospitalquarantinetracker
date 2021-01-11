@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "997622852459",
+    "project_id": "hospital-mental-health-tracker",
+    "storage_bucket": "hospital-mental-health-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997622852459:android:972f8917cdd4e6b0383a2e",
+        "android_client_info": {
+          "package_name": "es.uniovi.sdm.hospitalquarantinetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997622852459-dvfi94eo27ekcsu5m8bqoa293f456vdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-FkQm5bKeF_ynNkHyrnGfkCEOOBXhMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997622852459-dvfi94eo27ekcsu5m8bqoa293f456vdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

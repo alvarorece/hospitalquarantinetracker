@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Main">
+
+        <SwitchPreferenceCompat
+            app:key="disableSurvey"
+            app:summaryOff="Disable PHQ9 survey, it can cause trigger in case of past trauma"
+            app:summaryOn="Survey disabled"
+            app:title="Disable PHQ9 survey" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
